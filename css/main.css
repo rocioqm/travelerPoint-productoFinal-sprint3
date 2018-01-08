@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Index*/
+
+.index {
+  background-color: aqua;
+}
+
+.fg-index {
+  margin-bottom: 61%;
+  margin-top: 60%;
+  margin-left: 1.5%;
+}
+
+.logo-index {
+  width: 90vw;
+  height: 30vh;
+}
+
+/*Registrarse o Ingresar*/
+
+
+
