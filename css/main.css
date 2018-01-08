@@ -22,6 +22,53 @@
 }
 
 /*Registrarse o Ingresar*/
+.grad {
+  background: linear-gradient(rgb(89, 170, 240) 20%, rgb(105, 216, 250));
+  height: 100vh;
+}
 
+.btn-back {
+  color: black;
+  display: inline-block;
+  margin-top: 20px;
+}
 
+.container-flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
 
+.signup-title {
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 40px;
+}
+
+#signup-form {
+  font-family: 'Muli', sans-serif;
+}
+
+#signup-form label {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+#exampleInputUsername,
+#exampleInputEmail1,
+#exampleInputPassword1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+}
+
+.checkbox label {
+  margin-top: 10px;
+}
+
+.btn-signup {
+  border-radius: 25px;
+  letter-spacing: 2px;
+  padding: 1.5rem;
+  width: 70%;
+}

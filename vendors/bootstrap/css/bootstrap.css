@@ -1472,7 +1472,7 @@ abbr[data-original-title] {
 }
 .initialism {
   font-size: 90%;
-  text-transform: uppercase;
+  text-trans: uppercase;
 }
 blockquote {
   padding: 10px 20px;
@@ -1602,7 +1602,7 @@ pre code {
     width: 1170px;
   }
 }
-.container-fluid {
+. {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
