@@ -9,7 +9,8 @@
 /*Index*/
 
 .index {
-  background-color: aqua;
+  background: linear-gradient(rgb(89, 170, 240) 20%, rgb(105, 216, 250));
+  height: 100vh;
 }
 
 .fg-index {
@@ -79,6 +80,7 @@
   margin: 3px;
 }
 
+.btn-signup:hover,
 .btn-pagina1:hover {
   color: #333;
   background-color: rgb(89, 170, 240);
