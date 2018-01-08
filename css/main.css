@@ -79,19 +79,17 @@
   margin: 3px;
 }
 
-/*
 .btn-pagina1:hover {
   color: #333;
-  background-color: #e6e6e6;
+  background-color: rgb(89, 170, 240);
   border-color: #adadad;
 }
 
-*/
+.forgot {
+  color: black;
+  font-weight: bold;
+}
 
-
-
-
-/*Registrarse*/
 .container-flex-column {
   display: flex;
   flex-direction: column;
@@ -131,3 +129,4 @@
   padding: 1.5rem;
   width: 70%;
 }
+
