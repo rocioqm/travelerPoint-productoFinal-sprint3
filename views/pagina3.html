@@ -10,10 +10,23 @@
   <link rel="stylesheet" href="../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Muli:300|Oswald:300" rel="stylesheet">  
   <title>Traveler Point - Sign up</title>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: 'AIzaSyCo9pon8LLXocZN-ANAVtdDu2IiwxF7x3g',
+    authDomain: 'traveler-point.firebaseapp.com',
+    databaseURL: 'https://traveler-point.firebaseio.com',
+    projectId: 'traveler-point',
+    storageBucket: 'traveler-point.appspot.com',
+    messagingSenderId: '629280360421'
+    };
+    firebase.initializeApp(config);
+  </script>
 </head>
 <body class="grad">
   <div class="container">
-    <a href="" type="button" class="btn-back">
+    <a href="../views/pagina1.html" type="button" class="btn-back">
       <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
     </a>
     <div class="container-flex-column">
@@ -36,13 +49,12 @@
             <input type="checkbox"> By signing up I agree with <b>terms and conditions</b>
           </label>
         </div>
-        <a onclick="registrar()" href="../views/pagina4.html" type="button" class="btn btn-default btn-signup center-block" id="getstarted">GET STARTED</a>
+        <button onclick="registrar()" type="button" class="btn btn-default btn-signup center-block" id="getstarted">GET STARTED</button>
       </form>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
   <script type="text/javascript" src="../js/app1.js"></script>
 </body>
 </html>
