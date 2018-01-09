@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
   font-family: 'Muli', sans-serif;
 }
 
@@ -143,6 +142,7 @@
 .cselection-title {
   font-family: 'Oswald', sans-serif;
   margin-bottom: 40px;
+  margin-top: 30px;
 }
 
 .layout {
@@ -182,4 +182,101 @@
 
 .spain {
   background-image: url('../assets/images/spain.jpg');
+}
+
+.btn-tonewsfeed {
+  border-radius: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  padding: 1.5rem;
+  width: 70%;
+}
+
+/* Newsfeed */
+
+header {
+  padding: 15px;
+  border-bottom: 1px solid gainsboro;
+}
+
+header .takephoto i {
+  font-size: 2.5rem;
+}
+
+header .logo {
+  font-family: 'Oswald', sans-serif;  
+  font-size: 2rem;
+}
+
+#footer {
+  background-color: #ffff;
+  bottom: 0;
+  padding: 4px 0;
+  position: fixed;
+  width: 100%;
+}
+
+#footer ul li {
+  display: inline-block;
+  font-size: 2.5rem;
+  width: 19%;
+}
+
+nav#footer a {
+  color: black;
+  text-decoration: none;
+}
+
+#footer ul {
+  margin: auto;
+}
+
+/* Post */
+
+#newsfeed .post {
+  width: 100%;
+}
+
+.post .header-article {
+  padding: 10px 0;
+}
+
+.user {
+  display: inline-block;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.user img {
+  border-radius: 50px;
+  height: 40px;
+  margin-right: 5px;
+  width: 40px;
+}
+
+.user .username,
+.info-article .username {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.container-article img {
+  height: 300px;
+  width: 100%;
+}
+
+.info-article {
+  height: 80px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+}
+
+.info-article .times-liked {
+  display: block;
+}
+
+.info-article p {
+  display: inline-block;
+  margin: 0 5px;
 }
