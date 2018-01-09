@@ -1,4 +1,5 @@
 $(document).ready(function() {
   setTimeout(function() {
-    window.location.href = 'views/pagina1.html';}, 4000);
+    window.location.href = 'views/pagina1.html';
+}, 4000);
 });
