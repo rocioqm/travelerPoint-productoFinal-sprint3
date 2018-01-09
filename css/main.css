@@ -91,6 +91,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 2em;
+  margin-top: -14%;
 }
 
 .signup-title {
@@ -277,3 +278,6 @@ nav#footer a {
   display: inline-block;
   margin: 0 5px;
 }
+ .span1 {
+  color: grey;
+ }
