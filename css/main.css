@@ -127,8 +127,59 @@
 
 .btn-signup {
   border-radius: 25px;
+  font-weight: 700;
   letter-spacing: 2px;
   padding: 1.5rem;
   width: 70%;
 }
 
+/* Country Selection */
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.cselection-title {
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 40px;
+}
+
+.layout {
+  background: rgba(255, 255, 251, 0.575);
+  letter-spacing: 1px;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.select-country {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Muli', sans-serif;
+  height: 165px;
+  margin-bottom: 15px;
+  padding: 60px 0;
+}
+
+.france {
+  background-image: url('../assets/images/france.jpg');
+}
+
+.italy {
+  background-image: url('../assets/images/italy.jpg');
+}
+
+.peru {
+  background-image: url('../assets/images/peru.jpg');
+}
+
+.england {
+  background-image: url('../assets/images/england.jpg');
+}
+
+.japan {
+  background-image: url('../assets/images/japan.jpg');
+}
+
+.spain {
+  background-image: url('../assets/images/spain.jpg');
+}
