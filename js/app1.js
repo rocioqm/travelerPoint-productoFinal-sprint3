@@ -13,7 +13,7 @@ function registrar() {
 }
 
 $('#getstarted').click(function() {
-  window.location.href = 'file:///C:/Users/CHIO/Desktop/LABORATORIA/travelerpoint-productofinal-sprint3/views/pagina4.html';
+  window.location.href = 'pagina4.html';
 });
 
 function ingreso() {
@@ -31,5 +31,5 @@ function ingreso() {
 }
 
 $('#letsgo').click(function() {
-  window.location.href = 'file:///C:/Users/CHIO/Desktop/LABORATORIA/travelerpoint-productofinal-sprint3/views/pagina5.html';
+  window.location.href = '';
 });
