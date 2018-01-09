@@ -91,11 +91,12 @@
   flex-direction: column;
   justify-content: center;
   padding: 2em;
+  margin-top: -8%;
 }
 
 .signup-title {
   font-family: 'Oswald', sans-serif;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 #signup-form {
@@ -110,6 +111,7 @@
 #exampleInputUsername,
 #exampleInputEmail1,
 #exampleInputPassword1,
+exampleInputConfirmPassword1,
 #exampleInputEmail2,
 #exampleInputPassword2 {
   padding-top: 20px;
@@ -129,6 +131,9 @@
   width: 70%;
 }
 
+span {
+  color: grey;
+}
 /* Country Selection */
 .background {
   background-repeat: no-repeat;
