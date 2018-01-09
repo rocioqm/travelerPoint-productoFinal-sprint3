@@ -12,6 +12,10 @@ function registrar() {
   });
 }
 
+$('#getstarted').click(function() {
+  window.location.href = 'file:///C:/Users/CHIO/Desktop/LABORATORIA/travelerpoint-productofinal-sprint3/views/pagina4.html';
+});
+
 function ingreso() {
   var email2 = document.getElementById('exampleInputEmail2').value;
   var contrasena2 = document.getElementById('exampleInputPassword2').value;
@@ -26,3 +30,6 @@ function ingreso() {
   });
 }
 
+$('#letsgo').click(function() {
+  window.location.href = 'file:///C:/Users/CHIO/Desktop/LABORATORIA/travelerpoint-productofinal-sprint3/views/pagina5.html';
+});
