@@ -10,6 +10,19 @@
   <link rel="stylesheet" href="../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Muli:300|Oswald:300" rel="stylesheet">  
   <title>Traveler Point - Log In</title>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: 'AIzaSyCo9pon8LLXocZN-ANAVtdDu2IiwxF7x3g',
+    authDomain: 'traveler-point.firebaseapp.com',
+    databaseURL: 'https://traveler-point.firebaseio.com',
+    projectId: 'traveler-point',
+    storageBucket: 'traveler-point.appspot.com',
+    messagingSenderId: '629280360421'
+    };
+    firebase.initializeApp(config);
+  </script>
 </head>
 <body class="grad">
   <div class="container">
@@ -20,25 +33,25 @@
       <h2 class="signup-title text-center">Log In</h2>
       <form id="signup-form">
         <div class="form-group">
-          <label for="exampleInputEmail1">Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          <label for="exampleInputEmail2">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <label for="exampleInputPassword2">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
         </div>
         <div class="checkbox text-center">
           <label>
             <p>Forgot password? Don't worry. <a class="forgot"><b>Click here!</b></a></p>
           </label>
         </div>  
-        <a href="../views/pagina5.html" type="button" class="btn btn-default btn-signup center-block" id="getstarted">GET STARTED</a>
+        <button onclick="ingreso()" type="button" class="btn btn-default btn-signup center-block" id="letsgo">LET'S GO</button>
       </form>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-  <script type="text/javascript" src="../js/pagina2.js"></script>
+  <script type="text/javascript" src="../js/app1.js"></script>
 </body>
 </html>

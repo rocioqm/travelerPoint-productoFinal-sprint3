@@ -109,7 +109,9 @@
 
 #exampleInputUsername,
 #exampleInputEmail1,
-#exampleInputPassword1 {
+#exampleInputPassword1,
+#exampleInputEmail2,
+#exampleInputPassword2 {
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 8px;
