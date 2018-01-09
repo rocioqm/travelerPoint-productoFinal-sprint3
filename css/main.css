@@ -7,50 +7,26 @@
 
 /*Index*/
 
-.index {
-  background: linear-gradient(rgb(89, 170, 240) 20%, rgb(105, 216, 250));
+.vh100 {
   height: 100vh;
 }
 
-.fg-index {
-  margin-bottom: 61%;
-  margin-top: 60%;
-  margin-left: 1.5%;
+.logo-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 7rem;
+  padding: 100px 0;
+  text-shadow: 4px 2px 8px #ffff;
 }
 
-.logo-index {
-  width: 90vw;
-  height: 30vh;
+.main-logo img {
+  width: 100%;
 }
 
-/*Registrarse o Ingresar*/
-.grad {
-  background: linear-gradient(rgb(89, 170, 240) 20%, rgb(105, 216, 250));
-  height: 100vh;
-}
-
-.btn-back {
-  color: black;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-/*
-.fg-pagina1 {
-  margin-top: 10%;
-  margin-left: 27%;
-}
-
-.logo-pagina1 {
-  width: 40vw;
-  height: 15vh;
-}
-*/
+/* Home */
 
 .cont-pg1 {
-  height: 100vh;
   background-image: url(../assets/images/traveler1.jpg);
-  background-position: 50% 50%;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -64,19 +40,19 @@
   color: white;
 }
 
+/*
 .btns-forms{
   margin-top: 86%;
   margin-left: 4.5%;  
   opacity: 0.9;
 }
+*/
 
-.btn-pagina1 {
-  height: 10vh;
-  width: 40vw;
-  font-size: 20px;
+.btn-home {
+  border-radius: 25px;
   font-weight: 700;
-  border-radius: 40px;
-  margin: 3px;
+  letter-spacing: 2px;
+  padding: 1.5rem;
 }
 
 .btn-signup:hover,
@@ -89,6 +65,19 @@
 .forgot {
   color: black;
   font-weight: bold;
+}
+
+/*Registrarse o Ingresar*/
+
+.grad {
+  background: linear-gradient(rgb(89, 170, 240) 20%, rgb(105, 216, 250));
+  height: 100vh;
+}
+
+.btn-back {
+  color: black;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 .container-flex-column {
