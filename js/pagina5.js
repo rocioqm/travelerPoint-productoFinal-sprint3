@@ -66,5 +66,4 @@ window.addEventListener('load', function() {
   }
            
   document.getElementById('files').addEventListener('change', archivo, false);
-
 });
