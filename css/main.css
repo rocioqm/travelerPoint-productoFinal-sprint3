@@ -198,12 +198,19 @@ span {
 /* Newsfeed */
 
 header {
-  padding: 15px;
   border-bottom: 1px solid gainsboro;
+  height: 50px;
+  padding: 10px 15px;
 }
 
-header .takephoto i {
+header .add-post i {
   font-size: 2.5rem;
+}
+
+button.add-post {
+  border: none;
+  background-color: transparent;
+  padding: 0;
 }
 
 header .logo {
@@ -222,7 +229,7 @@ header .logo {
 #footer ul li {
   display: inline-block;
   font-size: 2.5rem;
-  width: 19%;
+  width: 20%;
 }
 
 nav#footer a {
@@ -232,6 +239,38 @@ nav#footer a {
 
 #footer ul {
   margin: auto;
+}
+
+/* Modal Post */
+
+.disabled {
+  background-color: gainsboro;
+  width: 40%;
+}
+
+.modal-body textarea {
+  font-family: 'Muli', sans-serif;  
+  resize: none;
+}
+
+.nuevoPost {
+  background-color: lightblue;
+  border-radius: 5px;
+  font-family: 'Muli', sans-serif;
+  font-size: 2rem;
+  margin: 2px 0;
+  padding: 6px 0;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+input#files {
+  margin: 10px 0;
+}
+
+.thumb{
+  height: 300px;
+  margin: 10px 5px 0 0;
 }
 
 /* Post */
@@ -258,7 +297,9 @@ nav#footer a {
 }
 
 .user .username,
-.info-article .username {
+.info-article .username,
+.profile-username,
+#profile-card .username {
   display: inline-block;
   font-weight: 600;
 }
@@ -274,13 +315,68 @@ nav#footer a {
   padding: 5px 10px;
 }
 
-.info-article .times-liked {
-  display: block;
+.info-article .times-liked,
+.info-article .times-loved {
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
-.info-article p {
+/* Profile */
+.block {
+  display: block;
+  height: 120px;
+}
+
+button.settings,
+button.log-out {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+}
+
+.profile-username {
+  padding: 3px;
+}
+
+#profile-card {
+  border-bottom: 1px solid gainsboro;
+  height: 250px;
+  padding: 10px 0;
+}
+
+.user-photo-profile img {
+  height: 120px;
+}
+
+.counters {
+  width: 100%;
+}
+
+.posts, .followers, .following {
   display: inline-block;
-  margin: 0 5px;
+  padding: 10px;
+  width: 30%;  
+}
+
+#profile-card a {
+  background-color: rgba(228, 225, 225, 0.699);
+  letter-spacing: 1px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.bio-content {
+  padding: 15px 0;
+}
+
+.pic-post {
+  float: left;
+  height: 150px;
+  width: 33.3%;
+}
+
+.pic-post img {
+  background-size: 100% 100%;
 }
  .span1 {
   color: grey;

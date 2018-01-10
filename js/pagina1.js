@@ -1,12 +1,12 @@
 function begin() {
   // ocultamos todos los span
-  $('form p span').hide();
+  $('form div span').hide();
   var $usernameInput = $('#exampleInputUsername');
   var $passwordInput = $('#exampleInputPassword1');
   var $confirmPasswordInput = $('#exampleInputConfirmPassword1');
-  var $submit = $('#getstarted');
+  var $submit = $('#sgetstarted');
   function isUsernameValid() {
-    return $usernameInput.val().length <= 8;
+    return $usernameInput.val().length <= 6;
   }
   function isPasswordValid() {
     return $passwordInput.val().length >= 6;
@@ -62,11 +62,15 @@ $(document).ready(function() {
   $('#getstarted').click(function() {        
     /* Captura de datos escrito en los inputs*/        
     var userName = document.getElementById('exampleInputUsername').value;
-    var email1 = document.getElementById('exampleInputEmail1').value;           
-    var password1 = document.getElementById('exampleInputPassword1').value;
+    var email = document.getElementById('exampleInputEmail1').value;
+    var password = document.getElementById('exampleInputPassword1').value;
     /* Guardando los datos en el LocalStorage*/
     localStorage.setItem('User Name', userName);
-    localStorage.setItem('Email', email1);
-    localStorage.setItem('Password', password1);
+    localStorage.setItem('Email', email);
+    localStorage.setItem('Password', password);
+    /* Limpiando los campos o inputs*/
+    document.getElementById('exampleInputUsername').value = '';
+    document.getElementById('exampleInputEmail1').value = '';
+    document.getElementById('exampleInputPassword1').value = '';
   });   
-});
+}); 
