@@ -271,6 +271,7 @@ input#files {
 .thumb{
   height: 300px;
   margin: 10px 5px 0 0;
+  width: 100%;
 }
 
 /* Post */
@@ -387,4 +388,31 @@ button.log-out {
 a.search-traveler {
   color: black;
   font-size: 2rem;
+}
+
+.search-write-box {
+  margin: 15px 0;
+  width: 100%;
+}
+
+.input-group .form-control:last-child {
+  border-radius: 5px;
+}
+
+#container-travelers {
+  display: inline-block;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  height: 500px;
+  padding: 15px;
+  text-align: center;
+  width: 80%;
+}
+
+.name{
+  background-color: lightblue;
+  border-radius: 5px;  
+  height: 35px;
+  margin: 5px 0;
+  width: 100%;
 }
