@@ -377,3 +377,10 @@ button.log-out {
  .span1 {
   color: grey;
  }
+
+/* Search */
+
+a.search-traveler {
+  color: black;
+  font-size: 2rem;
+}
