@@ -6,7 +6,7 @@ function begin() {
   var $confirmPasswordInput = $('#exampleInputConfirmPassword1');
   var $submit = $('#sgetstarted');
   function isUsernameValid() {
-    return $usernameInput.val().length <= 6;
+    return $usernameInput.val().length <= 10;
   }
   function isPasswordValid() {
     return $passwordInput.val().length >= 6;
