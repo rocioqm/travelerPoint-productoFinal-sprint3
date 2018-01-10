@@ -282,3 +282,6 @@ nav#footer a {
   display: inline-block;
   margin: 0 5px;
 }
+ .span1 {
+  color: grey;
+ }
