@@ -91,17 +91,34 @@ Ahora sí, vamos a la pantalla inicio.
 
 ![index](assets/images/inicio.png)
 
-Observamos en la parte superior 
+Observamos en la parte superior de la pantalla inicio un botón "+" el cuál nos sirve para postear y/o publicar archivos en nuestro newsfeed. Además podemos pre visualizar la imagen que estamos por publicar.
+
+*Archivos usados pagina5.html, pagina5.js y main.css* 
 
 ![index](assets/images/postear.png)
 
+Posteamos un mensaje en el cual nos aparece la hora en la que fue posteado.
+
 ![index](assets/images/posted.png)
+
+En la parte inferior de la pantalla podemos observar varios íconos, el último de ellos nos dirige al perfil del usuario.
+
+*Archivos usados pagina6.html y main.css* 
 
 ![index](assets/images/perfil.png)
 
+En la parte superior del perfil del usuario vemos un ícono el cuál si le damos click...
+
 ![index](assets/images/salir.png)
 
+Nos dirige a la pantalla en la cuál decidiremos si ingresar porque ya tenemos una cuenta creada o si deseamos crearnos una nueva.
+
 ![index](assets/images/botones.png)
+
+### **Observaciones**
+
+Al 
+
 
 ## Autoras
 
