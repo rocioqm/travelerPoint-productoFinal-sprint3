@@ -8,6 +8,7 @@ function registrar() {
     var errorMessage = error.message;
     // ...
   });
+  
 }
 
 function ingreso() {
