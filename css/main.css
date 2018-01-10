@@ -91,6 +91,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 2em;
+  margin-top: -14%;
 }
 
 .signup-title {
@@ -339,3 +340,6 @@ button.log-out {
 .pic-post img {
   background-size: 100% 100%;
 }
+ .span1 {
+  color: grey;
+ }
