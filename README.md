@@ -2,6 +2,7 @@
 ------
 
 ## Introducción
+------------
 
 Este proyecto es el **PRODUCTO FINAL** del Sprint 3 **"CREA TU PROPIA RED SOCIAL"**.
 
@@ -15,15 +16,16 @@ Algunos de los requerimientos que nos pidieron para realizar este producto fuero
   + Ser mobile friendly.
 
 ## Solución
+----------
 
 ### **Diseño del prototipo**
+----
+Al ser un trabajo 
 
-
-
-![prototipo1](assets/login.PNG)
+![prototipo](assets/images/prototipo.jpeg)
 
 ## Autoras
-
+----------
   + Rocio Quilla. 
   + Shannon Rivera. 
 
