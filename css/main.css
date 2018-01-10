@@ -199,8 +199,14 @@ header {
   padding: 10px 15px;
 }
 
-header .takephoto i {
+header .add-post i {
   font-size: 2.5rem;
+}
+
+button.add-post {
+  border: none;
+  background-color: transparent;
+  padding: 0;
 }
 
 header .logo {
@@ -219,7 +225,7 @@ header .logo {
 #footer ul li {
   display: inline-block;
   font-size: 2.5rem;
-  width: 19%;
+  width: 20%;
 }
 
 nav#footer a {
@@ -229,6 +235,38 @@ nav#footer a {
 
 #footer ul {
   margin: auto;
+}
+
+/* Modal Post */
+
+.disabled {
+  background-color: gainsboro;
+  width: 40%;
+}
+
+.modal-body textarea {
+  font-family: 'Muli', sans-serif;  
+  resize: none;
+}
+
+.nuevoPost {
+  background-color: lightblue;
+  border-radius: 5px;
+  font-family: 'Muli', sans-serif;
+  font-size: 2rem;
+  margin: 2px 0;
+  padding: 6px 0;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+input#files {
+  margin: 10px 0;
+}
+
+.thumb{
+  height: 300px;
+  margin: 10px 5px 0 0;
 }
 
 /* Post */
@@ -273,13 +311,10 @@ nav#footer a {
   padding: 5px 10px;
 }
 
-.info-article .times-liked {
-  display: block;
-}
-
-.info-article p {
+.info-article .times-liked,
+.info-article .times-loved {
   display: inline-block;
-  margin: 0 5px;
+  margin-bottom: 5px;
 }
 
 /* Profile */
@@ -333,8 +368,7 @@ button.log-out {
 .pic-post {
   float: left;
   height: 150px;
-  padding: 5px;
-  width: 33%;
+  width: 33.3%;
 }
 
 .pic-post img {

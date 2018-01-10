@@ -1,52 +1,70 @@
 window.addEventListener('load', function() {
-  var twittear = document.getElementById('post');
   var content = document.getElementById('post-content');
-  var contentScroll = content.scrollHeight;
+  var posting = document.getElementById('post');
   
-  content.addEventListener('keyup', activate);
-  content.addEventListener('input', resize);
-  twittear.addEventListener('click', send);
+  content.addEventListener('keyup', btnactive);
+  posting.addEventListener('click', send);
 
-  function activate(event) {
+  function btnactive(event) {
     if (content.value === '') {
-      twittear.disabled = true;
-      twittear.style.backgroundColor = 'gray';
-      twittear.style.color = 'black';
+      posting.disabled = true;
+      posting.style.backgroundColor = 'gainsboro';
+      posting.style.fontWeight = '500';
+      posting.style.cursor = 'not-allowed';      
     } else {
-      twittear.disabled = false;
-      twittear.style.backgroundColor = 'skyblue';
-      twittear.style.color = 'white';
+      posting.disabled = false;
+      posting.style.backgroundColor = 'lightblue';
+      posting.style.fontWeight = '700';      
+      posting.style.cursor = 'pointer';
     }
-  };
-
-  function resize(event) {
-    var el = content;
-    setTimeout(function() {
-      el.style.cssText = 'height:auto; padding:0';
-      el.style.cssText = 'height:' + el.scrollHeight + 'px';
-    }, 0);
   };
 
   function send(event) {
-    var containerTweets = document.getElementById('container-posts');
-    var nuevoTweet = document.createElement('div');
-    nuevoTweet.classList.add('nuevosPosts');
-    nuevoTweet.textContent = content.value;
-    var hours = document.createElement('p');
+    var containerPosts = document.getElementById('container-posts');
+    var nuevoPost = document.createElement('div');
+    
+
+    nuevoPost.classList.add('nuevoPost');
+    nuevoPost.textContent = content.value;
+    
+    var hours = document.createElement('div');
     hours.classList.add('hours');
     var date = new Date();
     var hour = date.getHours();
-    var minute = date.getMinutes();
-    if (minute < 10) {
-      minute = '0' + minute;
-    }
-    var hourEnd = hour + ':' + minute;
-    hours.textContent = hourEnd;
-    nuevoTweet.appendChild(hours);
-    containerTweets.appendChild(nuevoTweet);
+    var hourPost = 'Posted at ' + hour + 'h';
+    hours.textContent = hourPost;
+
+    nuevoPost.appendChild(hours);
+    containerPosts.appendChild(nuevoPost);
     content.value = '';
-    count.textContent = 140;
-    content.setAttribute('rows', '4');
-    activate();
+
+    btnactive();
   };
+
+  // Función para cargar imágenes
+  function archivo(evt) {
+    var files = evt.target.files; // FileList object
+     
+    // Obtenemos la imagen del campo "file". 
+    for (var i = 0, f; f = files[i]; i++) {         
+      // Solo admitimos imágenes.
+      if (!f.type.match('image.*')) {
+        continue;
+      }
+     
+      var reader = new FileReader();
+         
+      reader.onload = (function(theFile) {
+        return function(e) {
+        // Creamos la imagen.
+          document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+        };
+      })(f);
+
+      reader.readAsDataURL(f);
+    }
+  }
+           
+  document.getElementById('files').addEventListener('change', archivo, false);
+
 });
