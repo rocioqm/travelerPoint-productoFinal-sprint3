@@ -117,8 +117,11 @@ Nos dirige a la pantalla en la cuál decidiremos si ingresar porque ya tenemos u
 
 ### **Observaciones**
 
-Al 
+Al empezar a realizar el producto, nos interesamos por usar Firebase para poder hacer una validación y almacenamiento de nuestros usuarios que deseen registrarse. En el camino se presentaron varios inconvenientes, uno de ellos fue si le poníamos otra función aparte de la de Firebase al botón, este ya no almacenaba los datos y solo nos redireccionaba a la siguiente vista. Tratamos de solucionarlo sobre la marcha sin embargo ya le habíamos invertido varias horas así que decidimos usar el Local Storage para almacenar los datos del usuario.
 
+Otro incoveniente que tuvimos fue al momento de publicar/postear podemos ingresar texto y hacer que aparezca en el newsfeed pero no podemos publicar las imágenes a pesar de que carga y se pre-visualiza y que aún estamos trabajando en imprimir el comentario/imagen en la parte de arriba. 
+
+En el caso del filtrado, creamos una pequeña base de datos en la cuál nos aparece en un primer momento los nombres de esas personas pero cuando queremos buscar por alguna letra se esconden todos los nombres. 
 
 ## Autoras
 
