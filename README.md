@@ -40,17 +40,58 @@ En esta pantalla de inicio en el header se observan una serie de botones los cua
 
 En la sección anterior describimos el sketch sobre el cuál empezamos a trabajar, sin embargo, a lo largo del trabajo se han realizado modificaciones en pro de tener un mejor MPV.
 
+Al ingresar desde el link de gh-pages, nos vamos a dirigir a la primera vista en la cuál nos va a mostrar el nombre de la red social **Traveler Point** 
+
+*Archivos usados index.html, index.js y main.css* 
+
 ![index](assets/images/index.png)
+
+Después de unos segundos (4s) nos va a dirigir a la siguiente pantalla en la cuál vamos a visualizar dos botones, los cules son LOG IN y SIGN UP. 
+
+*Archivos usados pagina1.html y main.css* 
 
 ![index](assets/images/botones.png)
 
+Nos ponemos del lado de un usuario que por primera vez descarga Traveler Point y, como en toda aplicación que uno es nuevo, debe registrarse. 
+
+Para registrarse debe cumplir algunos mínimos:
+
+  + Nombre de usuario menor a 10 caracteres.
+  + Contraseña con al menos 6 caracteres.
+  + Confimar contraseña.
+  + Darle check para aceptar los términos y condiciones. 
+
+*Archivos usados pagina3.html, pagina1.js y main.css* 
+
 ![index](assets/images/signup.png)
+
+Los datos como nombre de usario, email y contraseña son alamcenaados en el local storage de la computadora. 
+
+*Archivos usados pagina3.html, pagina1.js y main.css* 
 
 ![index](assets/images/almacenamiento.png)
 
+Luego de darle click al botón GET STARTED nos va a dirigir a la siguiente pantalla en la cual observamos diversas imágenes sobe países que harán de filtros para poder seleccionarlas y cuando nos redireccione a la pantalla de inicio nos sugieraa perfiles de Travelers que hayan estado ene stos lugares. 
+
+*Archivos usados pagina4.html y main.css*  
+
 ![index](assets/images/filter.png)
 
+Una vez hecha la selección de lugares, al hacerle click a Enjoy nos vamos a dirigir a la pantalla de inicio.
+
+*Archivos usados pagina5.html y main.css* 
+
+Y también si le damos click a LET'S GO en LOG IN nos vamos a dirigir a la pantalla de inicio.
+
+*Archivos usados pagina2.html, pagina2.js y main.css*
+
+![index](assets/images/login.png)
+
+Ahora sí, vamos a la pantalla inicio.
+
 ![index](assets/images/inicio.png)
+
+Observamos en la parte superior 
 
 ![index](assets/images/postear.png)
 
