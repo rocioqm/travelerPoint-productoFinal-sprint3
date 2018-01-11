@@ -4,9 +4,9 @@ function begin() {
   var $usernameInput = $('#exampleInputUsername');
   var $passwordInput = $('#exampleInputPassword1');
   var $confirmPasswordInput = $('#exampleInputConfirmPassword1');
-  var $submit = $('#sgetstarted');
+  var $submit = $('#getstarted');
   function isUsernameValid() {
-    return $usernameInput.val().length <= 10;
+    return $usernameInput.val().length <= 10 && $usernameInput.val().length > 3;
   }
   function isPasswordValid() {
     return $passwordInput.val().length >= 6;
@@ -32,11 +32,20 @@ function begin() {
     else
       $confirmPasswordInput.next().show();
   }
-  function areAllValidationsPassing() {  
+  function areAllValidationsPassing() {
     return isUsernameValid() && isPasswordValid() && arePasswordsMaching();
   }
   function formStateEvent() {
-    $submit.prop('disabled', !areAllValidationsPassing());
+    // Revisar css porque el boton se hace pequeño en disabled
+    if (areAllValidationsPassing()) {
+      if ($submit.hasClass('disabled')) {
+        $submit.removeClass('disabled');
+      }
+    } else {
+      if(!$submit.hasClass('disabled')) {
+        $submit.addClass('disabled');
+      }
+    }
   }
   // hacemos focus al input username
   $usernameInput.focus();
@@ -55,15 +64,13 @@ function begin() {
     .on('keyup', confirmPasswordEvent)
     .on('keyup', formStateEvent);
   formStateEvent();
-}
-$(document).ready(begin);
 
-$(document).ready(function() {    
   $('#getstarted').click(function() {        
     /* Captura de datos escrito en los inputs*/        
     var $userName= $('#exampleInputUsername').val();
     var $emai =$('#exampleInputEmail1').val();
     var $password = $('#exampleInputPassword1').val();
+
     /* Guardando los datos en el LocalStorage*/
     localStorage.setItem('User Name', $userName);
     localStorage.setItem('Email', $emai);
@@ -74,4 +81,5 @@ $(document).ready(function() {
     $password.val('');
     
   });   
-}); 
+}
+
