@@ -50,7 +50,7 @@ Después de unos segundos (4s) nos va a dirigir a la siguiente pantalla en la cu
 
 *Archivos usados pagina1.html y main.css* 
 
-![index](assets/images/botones.png)
+![botones](assets/images/botones.png)
 
 Nos ponemos del lado de un usuario que por primera vez descarga Traveler Point y, como en toda aplicación que uno es nuevo, debe registrarse. 
 
@@ -63,7 +63,7 @@ Para registrarse debe cumplir algunos mínimos:
 
 *Archivos usados pagina3.html, pagina1.js y main.css* 
 
-![index](assets/images/signup.png)
+![signup](assets/images/signup.png)
 
 Los datos como nombre de usario, email y contraseña son alamcenaados en el local storage de la computadora. 
 
