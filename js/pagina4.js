@@ -7,6 +7,7 @@ $(function() {
     } else {
       $(this).addClass('checkbox-group-active');
       $(this).attr('value', 'on');
+      $('#tonewsfeed').removeClass('disabled');      
     }
     
     // Caja para guardar los valores on y off
