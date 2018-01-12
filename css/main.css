@@ -300,15 +300,15 @@ input#files {
   width: 100%;
 }
 
-/* Post
-
+/* Post */
+/*
 #newsfeed .post {
   width: 100%;
 }
 
 .post .header-article {
   padding: 10px 0;
-}
+} */
 
 .user {
   display: inline-block;
@@ -330,7 +330,7 @@ input#files {
   display: inline-block;
   font-weight: 600;
 }
-
+/*
 .container-article img {
   height: 300px;
   width: 100%;
