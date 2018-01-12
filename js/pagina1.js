@@ -42,7 +42,7 @@ function begin() {
         $submit.removeClass('disabled');
       }
     } else {
-      if(!$submit.hasClass('disabled')) {
+      if (!$submit.hasClass('disabled')) {
         $submit.addClass('disabled');
       }
     }
