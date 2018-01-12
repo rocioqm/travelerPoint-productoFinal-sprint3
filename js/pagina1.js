@@ -64,21 +64,22 @@ function begin() {
     .on('keyup', confirmPasswordEvent)
     .on('keyup', formStateEvent);
   formStateEvent();
- 
-  $('#getstarted').click(function () {
-    /* Captura de datos escrito en los inputs*/
-    var userName = document.getElementById('exampleInputUsername').value;
-    var email = document.getElementById('exampleInputEmail1').value;
-    var password = document.getElementById('exampleInputPassword1').value;
+
+  $('#getstarted').click(function() {        
+    /* Captura de datos escrito en los inputs*/        
+    var $userName= $('#exampleInputUsername').val();
+    var $emai =$('#exampleInputEmail1').val();
+    var $password = $('#exampleInputPassword1').val();
+
     /* Guardando los datos en el LocalStorage*/
-    localStorage.setItem('User Name', userName);
-    localStorage.setItem('Email', email);
-    localStorage.setItem('Password', password);
+    localStorage.setItem('User Name', $userName);
+    localStorage.setItem('Email', $emai);
+    localStorage.setItem('Password', $password);
     /* Limpiando los campos o inputs*/
-    document.getElementById('exampleInputUsername').value = '';
-    document.getElementById('exampleInputEmail1').value = '';
-    document.getElementById('exampleInputPassword1').value = '';
-  });
+    $userName.val('');
+    $emai.val('');
+    $password.val('');
+    
+  });   
 }
 
-$(document).ready(begin);
