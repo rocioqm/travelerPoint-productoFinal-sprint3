@@ -47,13 +47,13 @@ Al ingresar desde el link de gh-pages, nos vamos a dirigir a la primera vista en
 
 *Archivos usados index.html, index.js y main.css* 
 
-![index](assets/images/index.png)
+![index](assets/images/index.PNG)
 
 Después de unos segundos (4s) nos va a dirigir a la siguiente pantalla en la cuál vamos a visualizar dos botones, los cules son LOG IN y SIGN UP. 
 
 *Archivos usados pagina1.html y main.css* 
 
-![index](assets/images/botones.png)
+![botones](assets/images/botones.PNG)
 
 Nos ponemos del lado de un usuario que por primera vez descarga Traveler Point y, como en toda aplicación que uno es nuevo, debe registrarse. 
 
@@ -66,19 +66,19 @@ Para registrarse debe cumplir algunos mínimos:
 
 *Archivos usados pagina3.html, pagina1.js y main.css* 
 
-![index](assets/images/signup.png)
+![signup](assets/images/signup.PNG)
 
 Los datos como nombre de usario, email y contraseña son alamcenaados en el local storage de la computadora. 
 
 *Archivos usados pagina3.html, pagina1.js y main.css* 
 
-![index](assets/images/almacenamiento.png)
+![index](assets/images/almacenamiento.PNG)
 
 Luego de darle click al botón GET STARTED nos va a dirigir a la siguiente pantalla en la cual observamos diversas imágenes sobe países que harán de filtros para poder seleccionarlas y cuando nos redireccione a la pantalla de inicio nos sugieraa perfiles de Travelers que hayan estado ene stos lugares. 
 
 *Archivos usados pagina4.html y main.css*  
 
-![index](assets/images/filter.png)
+![index](assets/images/filter.PNG)
 
 Una vez hecha la selección de lugares, al hacerle click a Enjoy nos vamos a dirigir a la pantalla de inicio.
 
@@ -88,40 +88,43 @@ Y también si le damos click a LET'S GO en LOG IN nos vamos a dirigir a la panta
 
 *Archivos usados pagina2.html, pagina2.js y main.css*
 
-![index](assets/images/login.png)
+![index](assets/images/login.PNG)
 
 Ahora sí, vamos a la pantalla inicio.
 
-![index](assets/images/inicio.png)
+![index](assets/images/inicio.PNG)
 
 Observamos en la parte superior de la pantalla inicio un botón "+" el cuál nos sirve para postear y/o publicar archivos en nuestro newsfeed. Además podemos pre visualizar la imagen que estamos por publicar.
 
 *Archivos usados pagina5.html, pagina5.js y main.css* 
 
-![index](assets/images/postear.png)
+![index](assets/images/postear.PNG)
 
 Posteamos un mensaje en el cual nos aparece la hora en la que fue posteado.
 
-![index](assets/images/posted.png)
+![index](assets/images/posted.PNG)
 
 En la parte inferior de la pantalla podemos observar varios íconos, el último de ellos nos dirige al perfil del usuario.
 
 *Archivos usados pagina6.html y main.css* 
 
-![index](assets/images/perfil.png)
+![index](assets/images/perfil.PNG)
 
 En la parte superior del perfil del usuario vemos un ícono el cuál si le damos click...
 
-![index](assets/images/salir.png)
+![index](assets/images/salir.PNG)
 
 Nos dirige a la pantalla en la cuál decidiremos si ingresar porque ya tenemos una cuenta creada o si deseamos crearnos una nueva.
 
-![index](assets/images/botones.png)
+![index](assets/images/botones.PNG)
 
 ### **Observaciones**
 
-Al 
+Al empezar a realizar el producto, nos interesamos por usar Firebase para poder hacer una validación y almacenamiento de nuestros usuarios que deseen registrarse. En el camino se presentaron varios inconvenientes, uno de ellos fue si le poníamos otra función aparte de la de Firebase al botón, este ya no almacenaba los datos y solo nos redireccionaba a la siguiente vista. Tratamos de solucionarlo sobre la marcha sin embargo ya le habíamos invertido varias horas así que decidimos usar el Local Storage para almacenar los datos del usuario.
 
+Otro incoveniente que tuvimos fue al momento de publicar/postear podemos ingresar texto y hacer que aparezca en el newsfeed pero no podemos publicar las imágenes a pesar de que carga y se pre-visualiza y que aún estamos trabajando en imprimir el comentario/imagen en la parte de arriba. 
+
+En el caso del filtrado, creamos una pequeña base de datos en la cuál nos aparece en un primer momento los nombres de esas personas pero cuando queremos buscar por alguna letra se esconden todos los nombres. 
 
 ## Autoras
 ----------
