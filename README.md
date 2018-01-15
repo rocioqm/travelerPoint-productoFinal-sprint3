@@ -2,6 +2,7 @@
 ------
 
 ## Introducción
+------------
 
 Este proyecto es el **PRODUCTO FINAL** del Sprint 3 **"CREA TU PROPIA RED SOCIAL"**.
 
@@ -14,6 +15,8 @@ Algunos de los requerimientos que nos pidieron para realizar este producto fuero
   + Capacidad para poder tener amigos o para poder seguir a personas/marcas dentro de la red social.
   + Ser mobile friendly.
 
+## Solución
+----------
 ## Objetivo: Crear un red social
 
 ## Proceso de creación
@@ -124,7 +127,7 @@ Otro incoveniente que tuvimos fue al momento de publicar/postear podemos ingresa
 En el caso del filtrado, creamos una pequeña base de datos en la cuál nos aparece en un primer momento los nombres de esas personas pero cuando queremos buscar por alguna letra se esconden todos los nombres. 
 
 ## Autoras
-
+----------
   + Rocio Quilla. 
   + Shannon Rivera. 
 

@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="../assets/images/icon.png">
-  <link rel="shortcut icon" type="image/png" href="">  
   <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Muli:300|Oswald:300" rel="stylesheet"> 
@@ -16,21 +15,32 @@
     <a href="../views/pagina3.html" type="button" class="btn-back">
       <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
     </a>
-    <h2 class="cselection-title text-center">Which countries are you interested in?</h2>
-    <div class="col-xs-6">
-      <div class="select-country france background"><div class="layout">France</div></div>
-      <div class="select-country italy background"><div class="layout">Italy</div></div>
-    </div>
-    <div class="col-xs-6">
-      <div class="select-country england background"><div class="layout">England</div></div>
-      <div class="select-country peru background"><div class="layout">Peru</div></div>      
-    </div>
+    <h2 class="cselection-title text-center">Which countries are you interested in?</h2>    
+    <ul class="checkbox-group">
+      <li value="off" class="col-xs-6">
+        <div class="select-country background france"><div class="layout">France</div></div>
+      </li>
+      <li value="off" class="col-xs-6">
+        <div class="select-country background italy"><div class="layout">Italy</div></div>
+      </li>
+      <li value="off" class="col-xs-6">
+        <div class="select-country background england"><div class="layout">England</div></div>
+      </li>
+      <li value="off" class="col-xs-6">
+        <div class="select-country background peru"><div class="layout">Peru</div></div>
+      </li>
+    </ul>
+    <div id="checkbox-value"></div>
     <div class="col-xs-12">
-      <a href="../views/pagina5.html" type="button" class="btn btn-default btn-tonewsfeed center-block" id="tonewsfeed">ENJOY!</a>      
+      <a href="../views/pagina5.html" role="button" class="btn btn-default btn-tonewsfeed center-block disabled" id="tonewsfeed">ENJOY!</a>      
     </div> 
   </div>
+
+  
+
+
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="../js/pagina4.js"></script>
 </body>
 </html>

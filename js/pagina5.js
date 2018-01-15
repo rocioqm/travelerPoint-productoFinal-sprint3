@@ -21,11 +21,10 @@ window.addEventListener('load', function() {
 
   function send(event) {
     var containerPosts = document.getElementById('container-posts');
-    var nuevoPost = document.createElement('div');
-    
+    var newPost = document.createElement('div');
 
-    nuevoPost.classList.add('nuevoPost');
-    nuevoPost.textContent = content.value;
+    newPost.classList.add('newPost');
+    newPost.textContent = content.value;
     
     var hours = document.createElement('div');
     hours.classList.add('hours');
@@ -34,8 +33,10 @@ window.addEventListener('load', function() {
     var hourPost = 'Posted at ' + hour + 'h';
     hours.textContent = hourPost;
 
-    nuevoPost.appendChild(hours);
-    containerPosts.appendChild(nuevoPost);
+    newPost.appendChild(hours);
+    
+    $('#container-posts').prepend(newPost);    
+
     content.value = '';
 
     btnactive();
@@ -46,24 +47,24 @@ window.addEventListener('load', function() {
     var files = evt.target.files; // FileList object
      
     // Obtenemos la imagen del campo "file". 
-    for (var i = 0, f; f = files[i]; i++) {         
+    for (var i = 0, fgr = files[i]; i++;) {         
       // Solo admitimos imágenes.
-      if (!f.type.match('image.*')) {
+      if (!fgr.type.match('image.*')) {
         continue;
       }
      
       var reader = new FileReader();
          
       reader.onload = (function(theFile) {
-        return function(e) {
+        return function(event) {
         // Creamos la imagen.
-          document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+          document.getElementById('list').innerHTML = ['<img class="thumb" src=""', e.target.result, '" title="', escape(theFile.name), '"/>"'].join('');
         };
-      })(f);
+      })(fgr);
 
-      reader.readAsDataURL(f);
+      reader.readAsDataURL(fgr);
     }
   }
-           
+  
   document.getElementById('files').addEventListener('change', archivo, false);
 });

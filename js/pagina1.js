@@ -47,6 +47,7 @@ function begin() {
       }
     }
   }
+
   // hacemos focus al input username
   $usernameInput.focus();
   $usernameInput
