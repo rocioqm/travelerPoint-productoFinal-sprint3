@@ -5,6 +5,7 @@ function begin() {
   var $passwordInput = $('#exampleInputPassword2');
   var $submit = $('#letsgo');
   function isEmailValid() {
+    if 
     return $emailInput.val() === userName;
   }
   function isPasswordValid() {
