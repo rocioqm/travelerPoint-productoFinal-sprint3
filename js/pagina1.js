@@ -42,7 +42,7 @@ function begin() {
         $submit.removeClass('disabled');
       }
     } else {
-      if(!$submit.hasClass('disabled')) {
+      if (!$submit.hasClass('disabled')) {
         $submit.addClass('disabled');
       }
     }
@@ -65,7 +65,7 @@ function begin() {
     .on('keyup', formStateEvent);
   formStateEvent();
  
-  $('#getstarted').click(function () {
+  $('#getstarted').click(function() {
     /* Captura de datos escrito en los inputs*/
     var userName = document.getElementById('exampleInputUsername').value;
     var email = document.getElementById('exampleInputEmail1').value;
