@@ -31,7 +31,7 @@
           <div class="modal-body">
             <div id="">
               <textarea class="form-control" placeholder="What are you gonna share?" id="post-content" rows="4"></textarea>
-              <input type="file" id="files" name="files[]" accept="image/*">
+              <input type="file" id="files" name="files[]" multiple />
               <output id="list"></output>
               <hr>
               <button type="button" class="btn btn-default disabled" id="post">POST</button>
@@ -45,7 +45,7 @@
   <div id="container-posts"></div>
   
 
-  <!--  Plantilla del post
+  Plantilla del post
   <div id="newsfeed">
     <div class="post">
       <div class="header-article">
@@ -67,12 +67,8 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div> 
   
-
-
-
-
   <nav id="footer">
     <ul class="text-center">
       <li class="text-center"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
