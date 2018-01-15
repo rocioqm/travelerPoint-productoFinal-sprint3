@@ -301,14 +301,14 @@ input#files {
 }
 
 /* Post */
-/*
+
 #newsfeed .post {
   width: 100%;
 }
 
 .post .header-article {
   padding: 10px 0;
-} */
+} 
 
 .user {
   display: inline-block;
