@@ -398,13 +398,11 @@ button.log-out {
 }
 
 .pic-post {
-  float: left;
-  height: 150px;
-  width: 33.3%;
+  margin: 10px 0 0;
 }
 
-.pic-post img {
-  background-size: 100% 100%;
+.padding {
+  padding: 0 3px 0 0;
 }
 
 .span1 {
@@ -412,11 +410,6 @@ button.log-out {
 }
 
 /* Search */
-
-a.search-traveler {
-  color: black;
-  font-size: 2rem;
-}
 
 .search-write-box {
   margin: 15px 0;
@@ -431,16 +424,27 @@ a.search-traveler {
   display: inline-block;
   border: 1px solid gainsboro;
   border-radius: 5px;
-  height: 500px;
   padding: 15px;
-  text-align: center;
-  width: 80%;
+  width: 100%;
 }
 
-.name{
-  background-color: lightblue;
-  border-radius: 5px;  
-  height: 35px;
-  margin: 5px 0;
-  width: 100%;
+.collection {
+  border-bottom: 1px solid gainsboro;
+  padding: 15px;
+}
+
+.content {
+  border-radius: 50%;
+  height: 100px;
+}
+
+.name-traveler {
+  font-weight: 700;
+}
+
+.name-traveler i,
+.address-traveler i,
+.phone-traveler i,
+.mother-country i {
+  margin: 0 5px;
 }

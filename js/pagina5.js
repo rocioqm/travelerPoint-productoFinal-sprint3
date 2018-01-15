@@ -34,10 +34,8 @@ window.addEventListener('load', function() {
     hours.textContent = hourPost;
 
     newPost.appendChild(hours);
-
+    
     $('#container-posts').prepend(newPost);    
-    $('#container-posts div').prepend('<div class="delete-post"></div>');
-    $('.delete-post').prepend('<button type="button" class="close" aria-label="Close"><i class="fa fa-trash-o" aria-hidden="true"></i></button>');
 
     content.value = '';
 
