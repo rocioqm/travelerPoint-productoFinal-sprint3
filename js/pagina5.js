@@ -65,7 +65,7 @@ window.addEventListener('load', function() {
             '" title="', escape(theFile.name), '"/>'].join('');
           document.getElementById('list').insertBefore(span, null);
         };
-      })(fgr);
+      })(f);
 
       // Read in the image file as a data URL.
       reader.readAsDataURL(f);
